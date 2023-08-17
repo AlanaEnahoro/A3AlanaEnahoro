@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #323131;
+    font-family: 'Roboto Flex', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*LOGIN PAGE START */
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.container .div-form {
+    height: 100vh;
+    width: 50%;
+    background-color: rgb(101, 176, 128);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .div-form h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.container .div-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form .inp {
+    width: 60%;
+    height: 55px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    /* background-color: #323131; */
+    position: relative;
+}
+
+form .inp input {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    border: none;
+    outline: none;
+    background-color: #323131;
+    padding: 20px 40px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+form .check {
+    width: 60%;
+    margin: 20px auto 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+form .check input {
+    margin: 0 5px 0 20px;
+}
+
+form .check span {
+    margin-top: 0px;
+    color: #ffffff;
+}
+
+form .btn {
+    color: #323131;
+    font-size: 20px;
+    width: 438px;
+    height: 59px;
+    border-radius: 35px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.span-sign {
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.span-sign a {
+    color: #ffffff;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.span-sign:hover a {
+    text-decoration: underline;
+}
+
+.container .div-text {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(Imgs/pexels-cottonbro-studio-6864497.jpg);
+    box-shadow: inset 0 0 0 2000px rgba(116, 125, 108, 0.4);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container .div-text h1 {
+    color: #ffffff;
+    margin: auto;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: right;
+}
+
+
+
+/* Player Dock and Navgation START*/
+
+header {
+    width: 85%;
+    height: 95%;
+    /*border: 1px solid white;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .menu-side,
+.home-side {
+    position: relative;
+    width: 25%;
+    height: 90%;
+    /*border: 1px solid white;*/
+    border-radius: 12px 0px 0px 0px;
+    background-color: #353434;
+}
+
+header .home-side {
+    width: 75%;
+    background-color: #323131;
+    border-radius: 0px;
+}
+
+header .player-deck {
+    width: 100%;
+    height: 14%;
+    background-color: #595959;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+header .menu-side nav {
+    margin: 15px 0px 0px 20px;
+    padding: 10px;
+}
+
+
+header .menu-side ul {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+header .menu-side a {
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+    position: relative;
+    font-size: 15px;
+    display: table;
+    width: 100px;
+    padding: 15px;
+}
+
+header .menu-side span {
+    float: right;
+    margin: auto;
+    justify-content: right;
+}
+
+header .search-bar {
+    background-color: #65B080;
+    border-radius: 25px;
+    width: auto;
+    margin: auto;
+}
+
+header .search-bar span {
+    color: #CACACA;
+    font-weight: 300;
+}
+
+/*Bottom Half Nav */
+header .bottom-nav {
+    margin: auto;
+    width: 500px;
+    border-radius: 12px;
+}
+
+header .bottom-nav a {
+    width: 50%;
+    display: flex;
+    padding: 10px;
+}
+
+header .bottom-nav span {
+    text-align: left;
+    margin-left: 5px;
+    color: #CACACA;
+}
+
+header .bottom-nav h2 {
+    color: #878787;
+    font-weight: 500px;
+}
+
+.content {
+    margin-top: 50px;
+    display: flex;
+    width: 900px;
+}
+
+.GreetingsAlana {
+    display: grid;
+    margin-left: 50px;
+    margin-top: 10%;
+    gap: 15px;
+    grid-template-columns: repeat(3, 220px);
+    grid-auto-rows: 234px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 4px 3px 0px 0px #65B080;
+}
+
+.cover-image {
+    width: 100%;
+    height: 220px;
+}
+
+.dailymixtitles {
+    bottom: 50px;
+    position: relative;
+    background-color: rgba(116, 125, 108, 0.8);
+    border-radius: 0px 0px 16px 16px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+header .player-deck img {
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
+    box-shadow: none;
+    margin: 5px 0px 0px 5px;
+    margin-left: 40px;
+}
+
+header .player-deck h5 {
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 0px;
+    display: flex;
+    float: right;
+    color: #ffffff;
+}
+
+.text p {
+    color: #CACACA;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.icons {
+    margin: 15px;
+    font-size: 15px;
+    color: #D9D9D9;
+
+}
+
+.box .icons-play {
+    font-size: 30px;
+    color: #65B080;
+    filter: drop-shadow(0px 4px 5px rgb(0 0 0 / 0.25));
+}
+
+.box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 15px;
+}
+
+header .player-deck span {
+    color: #ffffff;
+    width: 32px;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+header .player-deck #currentStart {
+    margin: 0px;
+}
+
+header .player-deck .bar {
+    position: relative;
+    width: 35%;
+    height: 2px;
+    margin: 0px 15px 0px 10px;
+    background: #878787;
+
+}
+
+header .player-deck .bar .bar2 {
+    position: absolute;
+    width: 30%;
+    background: #CACACA;
+    height: 100%;
+    top: 0;
+}
+
+header .player-deck .bar .dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #CACACA;
+    border-radius: 50%;
+    left: 0%;
+    top: -1px;
+    transition: 1s linear;
+}
+
+header .player-deck .bar input {
+    position: absolute;
+    width: 100%;
+    height: -10px;
+    cursor: pointer;
+    z-index: 99999999;
+    opacity: 0;
+    transition: 3s linear;
+}
+
+header .player-deck .volume {
+    position: relative;
+    color: #ffffff;
+    margin: 50px;
+}
+
+/* Player Dock and Navgation END*/
+
+main {
+    background-color: #f5f5f5;
+    padding: 0px;
+}
+
+header .image-section {
+    z-index: 1;
+}
+
+header .image-section div {
+    width: 100vh;
+    height: 35%;
+    color: #fff;
+    justify-content: left;
+    display: flex;
+    align-items: end;
+    margin-left: 10px;
+    /* border: 1px solid white; */
+    background-image: url(Imgs/the\ weeknd.jpeg);
+    box-shadow: inset 0 0 0 2000px rgba(217, 217, 217, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+header .image-section h1 {
+    justify-content: left;
+    text-align: left;
+    margin: 80px 40px;
+    font-size: 50px;
+}
+
+header .box-content {
+    width: 80vh;
+    height: 40%;
+    margin: auto;
+    display: flex;
+    margin-top: -420px;
+    padding: 20px;
+    /* border: 1px solid white; */
+    z-index: 1;
+    justify-content: center;
+}
+
+header .box-content .w-25 img {
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+.table-image {
+    td,
+    th {
+        vertical-align: middle;
+       padding: 10px;
+    }
+}
+
+th, td{
+    width: 100vh;
+    color: #CACACA;
+    padding: 2px;
+    margin: 20px;
+   
+}
+header .madeforyou img{
+    float: left;
+    margin-right: 10px;
+    clear:both;
+    box-shadow: none;
+    border-radius: 4px;
+    margin: 50px;
+    width: 200px;
+    flex-direction: column;
+    background-color: #595959;
+}
+
+
+header .home-side .madeforyou h1{
+    color: #fff;
+    margin: 0px 40px;
+    /* background-color: #65B080; */
+}
+header .home-side .madeforyou p{
+    color: #fff;
+    margin: 100px 10px;
+    float: left;
+    font-size: 30px;
+    /* background-color: #65B080; */
+}
